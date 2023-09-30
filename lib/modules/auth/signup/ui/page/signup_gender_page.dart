@@ -24,7 +24,10 @@ class SignupGenderPage extends StatelessWidget {
 
                 Text(
                   "Please select your gender preferences",
-                  style: Theme.of(context).textTheme.headlineMedium,
+                  style: TextStyle(
+                    fontFamily: "YoungSerif",
+                    fontSize: 24,
+                  ),
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(

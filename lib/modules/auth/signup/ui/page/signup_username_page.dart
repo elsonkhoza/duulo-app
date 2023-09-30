@@ -20,15 +20,18 @@ class SignupUsernamePage extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
+                const Text(
                   "Who do you want people to call you?",
                   textAlign: TextAlign.center,
-                  style: Theme.of(context).textTheme.headlineMedium,
+                  style: TextStyle(
+              fontFamily: "YoungSerif",
+              fontSize: 24,
+            ),
                 ),
                 const SizedBox(height: 8),
                 Text("This is how you will appear on you profile",
                     textAlign: TextAlign.center,
-                    style: Theme.of(context).textTheme.bodyMedium),
+                    style: Theme.of(context).textTheme.bodyLarge),
                 const SizedBox(height: 24),
                 const TextField(
                   autocorrect: false,
@@ -66,7 +69,7 @@ class SignupUsernamePage extends StatelessWidget {
                 Text(
                   "Your data will never be shared with anyone without your permission",
                   textAlign: TextAlign.center,
-                  style: Theme.of(context).textTheme.bodySmall,
+                  style: Theme.of(context).textTheme.bodyLarge,
                 ),
               ],
             ),

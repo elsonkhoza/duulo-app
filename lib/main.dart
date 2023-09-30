@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'Duulo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+         fontFamily: "Montserrat",
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
