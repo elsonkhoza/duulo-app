@@ -1,3 +1,4 @@
+import 'package:app/modules/auth/signup/ui/page/signup_gender_page.dart';
 import 'package:flutter/material.dart';
 
 class SignupUsernamePage extends StatelessWidget {
@@ -38,7 +39,13 @@ class SignupUsernamePage extends StatelessWidget {
                 SizedBox(
                     width: double.maxFinite,
                     child: FilledButton(
-                        onPressed: () => {}, child: const Text("Continue"))),
+                        onPressed: () => {
+                        Navigator.of(context).push(
+                        MaterialPageRoute(
+                        builder: (context) => const SignupGenderPage(),
+                        ),
+                        )
+                        }, child: const Text("Create Account"))),
                 const SizedBox(
                   height: 24,
                 ),
@@ -47,6 +54,12 @@ class SignupUsernamePage extends StatelessWidget {
                     child: OutlinedButton(
                         onPressed: () => {},
                         child: const Text("Signup using Google"))),
+                const SizedBox(
+                  height: 8,
+                ),
+                TextButton(
+                    onPressed: () => {},
+                    child: const Text("Already have an account?")),
                 const SizedBox(
                   height: 24,
                 ),

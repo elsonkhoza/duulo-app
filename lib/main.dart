@@ -1,3 +1,4 @@
+import 'package:app/modules/auth/signup/ui/page/signup_gender_page.dart';
 import 'package:app/modules/auth/signup/ui/page/signup_username_page.dart';
 import 'package:flutter/material.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: SignupUsernamePage(),
+      home:SignupUsernamePage(),
     );
   }
 }
