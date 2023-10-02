@@ -21,7 +21,7 @@ class SignupUsernamePage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const Text(
-                  "Who do you want people to call you?",
+                  "Who should we call you?",
                   textAlign: TextAlign.center,
                   style: TextStyle(
               fontFamily: "YoungSerif",
