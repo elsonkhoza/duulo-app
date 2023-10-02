@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Duulo',
+      title: 'Duulo App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
          fontFamily: "Montserrat",

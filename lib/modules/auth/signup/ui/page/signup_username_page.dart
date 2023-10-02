@@ -24,9 +24,9 @@ class SignupUsernamePage extends StatelessWidget {
                   "Who should we call you?",
                   textAlign: TextAlign.center,
                   style: TextStyle(
-              fontFamily: "YoungSerif",
-              fontSize: 24,
-            ),
+                    fontFamily: "YoungSerif",
+                    fontSize: 24,
+                  ),
                 ),
                 const SizedBox(height: 8),
                 Text("This is how you will appear on you profile",
@@ -43,12 +43,14 @@ class SignupUsernamePage extends StatelessWidget {
                     width: double.maxFinite,
                     child: FilledButton(
                         onPressed: () => {
-                        Navigator.of(context).push(
-                        MaterialPageRoute(
-                        builder: (context) => const SignupGenderPage(),
-                        ),
-                        )
-                        }, child: const Text("Create Account"))),
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) =>
+                                      const SignupGenderPage(),
+                                ),
+                              )
+                            },
+                        child: const Text("Create Account"))),
                 const SizedBox(
                   height: 24,
                 ),
