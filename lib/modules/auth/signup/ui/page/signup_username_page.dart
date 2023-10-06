@@ -1,4 +1,6 @@
+import 'package:app/constants/constants.dart';
 import 'package:app/modules/auth/signup/ui/page/signup_gender_page.dart';
+import 'package:app/shared/widgets/custom_text_widget.dart';
 import 'package:flutter/material.dart';
 
 class SignupUsernamePage extends StatelessWidget {
@@ -14,25 +16,20 @@ class SignupUsernamePage extends StatelessWidget {
               fit: BoxFit.cover)),
       child: Scaffold(
         backgroundColor: Colors.transparent,
+        appBar: AppBar(),
         body: Padding(
-          padding: const EdgeInsets.all(8),
+          padding: PaddingValues.page,
           child: Center(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                const Text(
-                  "Who should we call you?",
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontFamily: "YoungSerif",
-                    fontSize: 24,
-                  ),
-                ),
-                const SizedBox(height: 8),
+                Space.h32,
+                const CustomHeaderOne(text:  "Who should we call you?"
+                  ,textAlign: TextAlign.center,),
+                Space.h8,
                 Text("This is how you will appear on you profile",
-                    textAlign: TextAlign.center,
-                    style: Theme.of(context).textTheme.bodyLarge),
-                const SizedBox(height: 24),
+                ),
+                Space.h24,
                 const TextField(
                   autocorrect: false,
                 ),
@@ -51,27 +48,20 @@ class SignupUsernamePage extends StatelessWidget {
                               )
                             },
                         child: const Text("Create Account"))),
-                const SizedBox(
-                  height: 24,
-                ),
+                Space.h24,
                 SizedBox(
                     width: double.maxFinite,
                     child: OutlinedButton(
                         onPressed: () => {},
                         child: const Text("Signup using Google"))),
-                const SizedBox(
-                  height: 8,
-                ),
+               Space.h8,
                 TextButton(
                     onPressed: () => {},
                     child: const Text("Already have an account?")),
-                const SizedBox(
-                  height: 24,
-                ),
+                Spacer(),
                 Text(
                   "Your data will never be shared with anyone without your permission",
                   textAlign: TextAlign.center,
-                  style: Theme.of(context).textTheme.bodyLarge,
                 ),
               ],
             ),
