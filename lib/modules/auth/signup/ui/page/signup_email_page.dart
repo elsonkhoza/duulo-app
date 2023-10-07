@@ -1,5 +1,6 @@
 import 'package:app/constants/constants.dart';
 import 'package:app/modules/home/page/home_page.dart';
+import 'package:app/shared/widgets/app_button_widgets.dart';
 import 'package:app/shared/widgets/custom_text_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -32,15 +33,14 @@ class SignupEmailOrPhonePage extends StatelessWidget {
               const Spacer(),
               SizedBox(
                   width: double.maxFinite,
-                  child: FilledButton(
-                      onPressed: ()=>{
+                  child: AppButton(text: "Continue",
+                  onPressed: ()=>{
                     Navigator.of(context).push(
                       MaterialPageRoute(
                         builder: (context) => const HomePage(),
                       ),
                     )
-                  }, child: Text("Continue")
-                  ,
+                  },
                   )
 
               ),

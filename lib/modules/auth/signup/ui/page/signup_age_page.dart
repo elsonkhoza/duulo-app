@@ -1,5 +1,6 @@
 import 'package:app/constants/constants.dart';
 import 'package:app/modules/auth/signup/ui/page/signup_email_page.dart';
+import 'package:app/shared/widgets/app_button_widgets.dart';
 import 'package:app/shared/widgets/custom_text_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -32,13 +33,13 @@ class SignupAgePage extends StatelessWidget {
               const Spacer(),
               SizedBox(
                   width: double.maxFinite,
-                  child: FilledButton(onPressed: ()=>{
+                  child: AppButton(text: "Continue",onPressed: ()=>{
                     Navigator.of(context).push(
                       MaterialPageRoute(
                         builder: (context) => const SignupEmailOrPhonePage(),
                       ),
                     )
-                  }, child: Text("Continue"))),
+                  },)),
              Space.h8
               ,
               const Text("We will not reveal your date of birth to others")

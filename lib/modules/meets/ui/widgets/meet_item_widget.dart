@@ -1,3 +1,4 @@
+import 'package:app/modules/meets/ui/widgets/meet_stories_widget.dart';
 import 'package:flutter/material.dart';
 
 class MeetItem extends StatefulWidget {
@@ -11,14 +12,7 @@ class _MeetItemState extends State<MeetItem> {
   @override
   Widget build(BuildContext context) {
     return Stack(children: [
-      Container(
-        constraints: const BoxConstraints.expand(),
-        decoration: const BoxDecoration(
-            image: DecorationImage(
-                image: AssetImage("assets/images/happy_couple.jpg"),
-                fit: BoxFit.cover)),
-        child: null,
-      )
+    MeetStories()
       ,
       Padding(
         padding: const EdgeInsets.all(8.0),

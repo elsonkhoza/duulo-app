@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-import '../widget/meet_item_widget.dart';
+import '../../meets/ui/widgets/meet_item_widget.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -15,7 +16,12 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        actions: [
+          IconButton(onPressed:()=>{}, icon: const Icon(Icons.filter_list)),
+          IconButton(onPressed:()=>{}, icon: const Icon(Icons.more_vert)),
+        ],
+      ),
       bottomNavigationBar: NavigationBar(
         onDestinationSelected: (int index) {
           setState(() {
@@ -25,8 +31,8 @@ class _HomePageState extends State<HomePage> {
         selectedIndex: currentPageIndex,
         destinations: const <Widget>[
           NavigationDestination(
-            selectedIcon: Icon(Icons.search),
-            icon: Icon(Icons.search),
+            selectedIcon: Icon(Icons.explore),
+            icon: Icon(Icons.explore_outlined),
             label: 'Meet',
           ),
           NavigationDestination(

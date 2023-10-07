@@ -12,11 +12,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Duulo App',
+      title: 'Duulo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
          fontFamily: "Montserrat",
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        navigationBarTheme: const NavigationBarThemeData(
+          backgroundColor: Colors.white,
+          elevation: 0,
+          indicatorColor: Colors.white,
+        ),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.brown),
         useMaterial3: true,
       ),
       home:SignupUsernamePage(),

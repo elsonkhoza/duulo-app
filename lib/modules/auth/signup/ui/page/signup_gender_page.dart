@@ -3,6 +3,7 @@ import 'package:app/modules/auth/signup/ui/page/signup_age_page.dart';
 import 'package:app/modules/auth/signup/ui/page/signup_email_page.dart';
 import 'package:app/modules/auth/signup/ui/widget/gender_choice_widget.dart';
 import 'package:app/modules/auth/signup/ui/widget/show_gender_widget.dart';
+import 'package:app/shared/widgets/app_button_widgets.dart';
 import 'package:app/shared/widgets/custom_text_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -45,18 +46,15 @@ class SignupGenderPage extends StatelessWidget {
               ),
               Space.h24,
               Spacer(),
-              SizedBox(
-                width: double.maxFinite,
-                child: FilledButton(
-                    onPressed: () => {
-                          Navigator.of(context).push(
-                            MaterialPageRoute(
-                              builder: (context) => const SignupAgePage(),
-                            ),
-                          )
-                        },
-                    child: Text("Continue")),
-              ),
+          SizedBox(
+              width: double.maxFinite,
+              child: AppButton(text: "Continue",onPressed: ()=>{
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => const SignupAgePage(),
+                  ),
+                )
+              },)),
               Space.h8,
               const Text(
                 "Please note that gender you prefer will not be shown to other people",

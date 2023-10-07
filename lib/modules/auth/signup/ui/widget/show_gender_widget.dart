@@ -23,7 +23,7 @@ class _ShowMeGenderButtonState extends State<ShowMeGenderButton> {
         backgroundColor:
         MaterialStateColor.resolveWith((Set<MaterialState> states) {
           return states.contains(MaterialState.selected)
-              ? Colors.black54
+              ? Colors.black87
               : Colors.white;
         }),
         foregroundColor:
