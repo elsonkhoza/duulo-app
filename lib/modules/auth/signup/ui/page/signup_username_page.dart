@@ -23,11 +23,10 @@ class SignupUsernamePage extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Space.h32,
                 const CustomHeaderOne(text:  "Who should we call you?"
                   ,textAlign: TextAlign.center,),
-                Space.h8,
-                Text("This is how you will appear on you profile",
+                Space.h24,
+                const Text("This is how you will appear on you profile",
                 ),
                 Space.h24,
                 const TextField(

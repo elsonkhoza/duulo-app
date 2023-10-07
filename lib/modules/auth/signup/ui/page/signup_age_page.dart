@@ -1,4 +1,5 @@
 import 'package:app/constants/constants.dart';
+import 'package:app/modules/auth/signup/ui/page/signup_email_page.dart';
 import 'package:app/shared/widgets/custom_text_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +17,7 @@ class SignupAgePage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              const CustomHeaderOne(text: "Okay nice! So when is your birthday",
+              const CustomHeaderOne(text: "Okay nice! So when is your birthday?",
               textAlign: TextAlign.center,
               ),
               Space.h24,
@@ -31,7 +32,13 @@ class SignupAgePage extends StatelessWidget {
               const Spacer(),
               SizedBox(
                   width: double.maxFinite,
-                  child: FilledButton(onPressed: (){}, child: Text("Continue"))),
+                  child: FilledButton(onPressed: ()=>{
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => const SignupEmailOrPhonePage(),
+                      ),
+                    )
+                  }, child: Text("Continue"))),
              Space.h8
               ,
               const Text("We will not reveal your date of birth to others")

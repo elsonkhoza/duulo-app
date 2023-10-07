@@ -1,5 +1,6 @@
 import 'package:app/constants/constants.dart';
 import 'package:app/modules/auth/signup/ui/page/signup_age_page.dart';
+import 'package:app/modules/auth/signup/ui/page/signup_email_page.dart';
 import 'package:app/modules/auth/signup/ui/widget/gender_choice_widget.dart';
 import 'package:app/modules/auth/signup/ui/widget/show_gender_widget.dart';
 import 'package:app/shared/widgets/custom_text_widget.dart';
